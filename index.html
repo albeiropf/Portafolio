@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relojeria PF</title>
+    <link rel="stylesheet" href="CSS/estilo.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   
+</head>
+<body>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <h1>Bienvenidos a la Relojería PF</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Introducción -->
+    <main>
+        <section id="inicio" class="intro">
+            <h2>Introducción</h2>
+            <p>En esta página encontrarás las mejores marcas y estilos de relojes, seleccionados cuidadosamente para ti.</p>
+        </section>
+
+        <!-- Sección de Acerca de Nosotros -->
+        <section id="acerca" class="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa dedicada a la venta de relojes exclusivos, combinando calidad, estilo y funcionalidad en cada producto.</p>
+        </section>
+
+        <!-- Sección de Galería -->
+        <section id="galeria" class="gallery">
+            <h2>Galería de Relojes</h2>
+            <div class="images">
+                <a href="reloj1.html" target="_blank">
+                <img src="IMG/imagen1.jpg" alt="Reloj 1"></a>
+
+                <a href="reloj2.html" target="_blank">
+                <img src="IMG/imagen2.jpg" alt="Reloj 2"></a>
+
+                <a href="reloj3.html" target="_blank">
+                <img src="IMG/imagen3.jpg" alt="Reloj 3"></a>
+
+                <a href="reloj4.html" target="_blank">
+                <img src="IMG/imagen4.jpg" alt="Reloj 4"></a>
+
+                <a href="reloj5.html" target="_blank">
+                <img src="IMG/imagen5.jpg" alt="Reloj 5"></a>
+
+                <a href="reloj6.html" target="_blank">  
+                <img src="IMG/imagen6.jpg" alt="Reloj 6"></a>
+
+                <a href="reloj7.html" target="_blank">
+                <img src="IMG/imagen7.jpg" alt="Reloj 7"></a>
+
+                <a href="reloj8.html" target="_blank">
+                <img src="IMG/imagen8.jpg" alt="Reloj 8"></a>
+
+                <a href="reloj9.html" target="_blank">
+                <img src="IMG/imagen9.jpg" alt="Reloj 9"></a>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contact-form">
+            <h2>Formulario de contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                <label for="message">mensaje:</label>
+                <textarea id="message" name="message" placeholder="escribe el mensaje aqui" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="statusMessage"></p>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Relojería PF. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // inicializar el servicio de emailJS con tu clave publica
+        (function(){
+            emailjs.init("iPxzagp2r6Fvair-P"); // reemplazar la clave publica
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/script.js"></script>
+    
+    
+</body>
+</html>
